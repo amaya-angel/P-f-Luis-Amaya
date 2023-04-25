@@ -126,12 +126,14 @@ section {
 }
 
 .parrafo-section {
+    margin: 10px;
     width: 60%;
     height: 70%;
-    color: rgb(251, 255, 0);
+    color: rgb(255, 255, 255);
     font-size: 20px;
-    text-shadow: 1px 1px 20px rgb(0, 0, 0),
-    1px 1px 40px rgb(0, 0, 0);
+    text-shadow: 1px 1px 10px black,
+    1px 1px 20px black,
+    1px 1px 40px black;
 }
 
 footer {
