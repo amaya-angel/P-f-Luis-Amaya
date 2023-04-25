@@ -136,6 +136,38 @@ section {
     1px 1px 40px black;
 }
 
+.line-section {
+    width: 100%;
+    border: solid 2px white;
+}
+
+.section-galery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.w-my-style {
+    width: 45%;
+}
+
+.container-videos-inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tittle-videos-inicio {
+    display: inline;
+    font-size: medium;
+    text-shadow: 2px 2px 10px black;
+    background-color: aliceblue;
+}
+
+.videos-inicio {
+    border: solid 2px white;
+    margin: 10px;
+}
+
 footer {
     grid-area: footer;
     display: flex;
@@ -186,6 +218,9 @@ footer ul li {
     0 0 30px red,
     0 0 60px red,
     0 0 120px red;
+    }
+    .container-videos-inicio {
+        flex-direction: column;
     }
     
 
