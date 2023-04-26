@@ -142,11 +142,12 @@ section {
 }
 
 .section-galery {
-    display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.w-my-style {
+.w-my-style-carrusel {
+    margin: 10px;
     width: 45%;
 }
 
@@ -219,9 +220,24 @@ footer ul li {
     0 0 60px red,
     0 0 120px red;
     }
+
     .container-videos-inicio {
         flex-direction: column;
     }
+
+    .videos-inicio {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .section-galery {
+        flex-direction: column;
+    }
+
+    .w-my-style-carrusel {
+    width: 80%;
+    margin: 5px;
+}
     
 
     .parrafo-section {
