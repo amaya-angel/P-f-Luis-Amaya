@@ -146,6 +146,12 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.tittle-carrusel {
+    color: aliceblue;
+    text-decoration: double;
+    text-shadow: 2px 2px 5px rgb(251, 255, 0);
+}
 .w-my-style-carrusel {
     margin: 10px;
     width: 45%;
