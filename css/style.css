@@ -1,8 +1,7 @@
 @font-face {
-    font-family: "The Morille" ;
+    font-family: "The Morille";
     src: url(./../fonts/The\ Morille.otf);
 }
-
 
 * {
     margin: 0;
@@ -10,7 +9,7 @@
     box-sizing: border-box;
 }
 
-body {    
+body {
     background-image: url(./../imgs/bg-img-general.jpg);
     background-size: cover;
 }
@@ -20,11 +19,10 @@ body {
     grid-template-rows: 170px 1fr 1fr 130px;
     grid-template-columns: 20% auto 25%;
     grid-template-areas:
-    "header header nav"
-    "main main nav"
-    "main main nav"
-    "footer footer footer"
-    
+        "header header nav"
+        "main main nav"
+        "main main nav"
+        "footer footer footer"
     ;
 }
 
@@ -41,10 +39,11 @@ header {
     height: 100px;
     margin: 5px;
 }
+
 h1 {
     color: rgb(255, 255, 255);
     text-shadow: 5px 2px 25px rgb(255, 4, 180),
-    5px 2px 50px rgb(255, 4, 180);
+        5px 2px 50px rgb(255, 4, 180);
     font-family: The Morille;
     font-size: 60px;
     text-align: center;
@@ -56,6 +55,7 @@ h1 {
     flex-wrap: wrap;
     border-radius: 25px;
 }
+
 .my-style-nav-div {
     display: flexbox;
 
@@ -105,6 +105,7 @@ main {
     flex-direction: column;
 
 }
+
 .flex-center {
     display: flex;
     flex-direction: column;
@@ -124,9 +125,9 @@ main {
     color: rgb(255, 207, 207);
     font-size: 32px;
     text-shadow: 0 0 15px red,
-    0 0 30px red,
-    0 0 60px red,
-    0 0 120px red;
+        0 0 30px red,
+        0 0 60px red,
+        0 0 120px red;
     transition-delay: 0.2s;
 }
 
@@ -137,8 +138,8 @@ main {
     color: rgb(255, 255, 255);
     font-size: 20px;
     text-shadow: 1px 1px 10px black,
-    1px 1px 20px black,
-    1px 1px 40px black;
+        1px 1px 20px black,
+        1px 1px 40px black;
 }
 
 
@@ -153,6 +154,7 @@ main {
     text-decoration: double;
     text-shadow: 2px 2px 5px rgb(251, 255, 0);
 }
+
 .w-my-style-carrusel {
     margin: 10px;
     width: 45%;
@@ -184,6 +186,7 @@ footer {
     align-items: flex-end;
     flex-direction: row-reverse;
 }
+
 footer p {
     margin: 20px;
     color: white;
@@ -197,33 +200,33 @@ footer ul li {
     width: 40px;
 }
 
-
 @media screen and (max-width: 991px) {
     .container-grid {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 100%;
         grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer"
+            "header"
+            "nav"
+            "main"
+            "footer"
         ;
     }
 
     h1 {
         display: none;
     }
+
     .logo-banda {
         text-align: center;
     }
 
     .neon {
-    color: rgb(255, 207, 207);
-    text-shadow: 0 0 15px red,
-    0 0 30px red,
-    0 0 60px red,
-    0 0 120px red;
+        color: rgb(255, 207, 207);
+        text-shadow: 0 0 15px red,
+            0 0 30px red,
+            0 0 60px red,
+            0 0 120px red;
     }
 
     .container-videos {
@@ -240,10 +243,9 @@ footer ul li {
     }
 
     .w-my-style-carrusel {
-    width: 80%;
-    margin: 5px;
-}
-    
+        width: 80%;
+        margin: 5px;
+    }
 
     .parrafo-style {
         width: 90%;
