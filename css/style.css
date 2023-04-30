@@ -56,15 +56,6 @@ h1 {
     border-radius: 25px;
 }
 
-.my-style-nav-div {
-    display: flexbox;
-
-}
-
-.my-style-nav-ul {
-    display: flexbox;
-}
-
 .my-style-nav-item {
     border: solid black 2px;
     border-radius: 12px;
@@ -103,7 +94,6 @@ main {
     display: flex;
     padding: 0;
     flex-direction: column;
-
 }
 
 .flex-center {
