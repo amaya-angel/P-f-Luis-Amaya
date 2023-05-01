@@ -10,18 +10,19 @@
 }
 
 body {
-    background-image: url(./../imgs/bg-img-general.jpg);
+    background-image: url(./../imgs/imagen-de-muestra-7.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container-grid {
     display: grid;
     grid-template-rows: 170px 1fr 1fr 130px;
-    grid-template-columns: 20% auto 25%;
+    grid-template-columns: 10% auto 25%;
     grid-template-areas:
-        "header header nav"
-        "main main nav"
-        "main main nav"
+        "nav header header"
+        "nav main main"
+        "nav main main"
         "footer footer footer"
     ;
 }
@@ -49,44 +50,42 @@ h1 {
     text-align: center;
 }
 
-.my-style-nav {
-    grid-area: nav;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 25px;
+nav {
+    margin: 15px;
 }
 
-.my-style-nav-item {
-    border: solid black 2px;
-    border-radius: 12px;
+nav ul {
     list-style: none;
-    margin: 40px
+    padding: 0;
 }
 
-.my-style-nav-item:hover {
-    opacity: 0.5;
-    background-color: rgb(255, 28, 104);
+nav ul li {    
+    margin-top: 30px;
 }
 
-.my-style-nav-link {
-    color: white;
+nav a {
     text-decoration: none;
-    margin: 5px;
+    color: white;
+    font-size: 20px;
 }
 
-.my-style-input-search {
-    border: solid 2px rgb(0, 0, 0);
-    border-radius: 12px;
-    margin-top: 50px;
-    padding: 3px;
+@media screen and (min-width: 991px) {
+
+    nav a:hover {
+    text-shadow: 2px 0  10px rgb(255, 0, 128), 2px 0  25px rgb(255, 0, 128), 2px 0 50px rgb(255, 0, 128);
+    font-size: 25px;
+    transition: 0.7s;
+    margin: 20px;
+    
+    }
 }
 
+nav label {
+    display: none;
+}
 
-.my-style-button-search {
-    border: solid 2px rgb(0, 0, 0);
-    border-radius: 12px;
-    margin-top: 50px;
-    padding: 3px;
+#burger-menu {
+    display: none;
 }
 
 main {
@@ -107,33 +106,41 @@ main {
 }
 
 .neon-ligth-effect {
-    color: rgb(48, 48, 48);
-    text-shadow: 2px 2px 20px rgb(54, 54, 54);
+    animation: neon-on-off 3s infinite;
 }
 
-.neon-ligth-effect:hover {
+@keyframes neon-on-off {
+    0% {
+        color: rgb(48, 48, 48);
+    text-shadow: 2px 2px 20px rgb(54, 54, 54);
+    animation: neon-on-off 3s infinite;
+    }
+    100% {
     color: rgb(255, 207, 207);
-    font-size: 32px;
     text-shadow: 0 0 15px red,
         0 0 30px red,
         0 0 60px red,
         0 0 120px red;
     transition-delay: 0.2s;
+    }
 }
 
 .parrafo-style {
-    margin: 10px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 15px;
+    padding: 5px;
     width: 60%;
     height: 70%;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    text-shadow: 1px 1px 10px black,
-        1px 1px 20px black,
-        1px 1px 40px black;
+    text-shadow: 1px 1px 10px rgb(255, 255, 255),
+        1px 1px 20px rgb(255, 0, 200),
+        1px 1px 40px rgb(0, 238, 255);
 }
 
-
 .section-galery {
+    display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
@@ -149,10 +156,15 @@ main {
     margin: 10px;
     width: 45%;
 }
+.section-videos {
+    width: 60%;
+}
 
 .container-videos {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .title-videos {
@@ -162,24 +174,27 @@ main {
 }
 
 .video {
-    border: solid 2px white;
+    border: solid 3px white;
+    border-radius: 5px;
     margin: 10px;
 }
 
 footer {
     grid-area: footer;
     display: flex;
-    padding-bottom: 25px;
     border: solid 2px black;
     border-radius: 15px;
     justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: row-reverse;
+    align-items: center;
 }
 
 footer p {
     margin: 20px;
     color: white;
+}
+
+footer ul {
+    margin: 0;
 }
 
 footer ul li {
@@ -191,6 +206,12 @@ footer ul li {
 }
 
 @media screen and (max-width: 991px) {
+
+    body {
+        background-position: center center;
+        background-attachment: fixed;
+      }
+
     .container-grid {
         display: grid;
         grid-template-rows: auto;
@@ -211,6 +232,42 @@ footer ul li {
         text-align: center;
     }
 
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: none;
+    }
+    nav a {
+        text-shadow: 2px 0  10px rgb(255, 0, 128), 2px 0  25px rgb(255, 0, 128), 2px 0 50px rgb(255, 0, 128);
+    }
+
+    nav label {
+        display: block;
+    }
+
+    #burger-menu:checked ~ ul {
+        display: block;
+        animation-name: display-from-left-to-right;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes display-from-left-to-right {
+        0% {
+            opacity: 0;
+            margin-left: 0;
+        }
+    
+        100% {
+            opacity: 1;
+            margin-left: 10px;
+        }
+    }
+
+    
     .neon {
         color: rgb(255, 207, 207);
         text-shadow: 0 0 15px red,

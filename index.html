@@ -14,50 +14,36 @@
 <body>
     <div class="container-grid">
         <header>
-            <img class="logo-banda" src="./imgs/logo-banda.png" alt="logo la toma cumbia">
+           
             <h1>La Toma Cumbia</h1>
         </header>
 
-        <nav class="navbar navbar-expand-lg my-style-nav">
-            <div>
-                <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <form class="collapse navbar-collapse my-style-form" id="navbarSupportedContent" role="search">
-                    <input class="my-style-input-search" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="my-style-button-search" type="submit">Buscar</button>
-                </form>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul>
-                        <li class="my-style-nav-item">
-                            <a class="my-style-nav-link" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="my-style-nav-item">
-                            <a class="my-style-nav-link" href="./pages/galeria.html">Galeria</a>
-                        </li>
-                        <li class="my-style-nav-item">
-                            <a class="my-style-nav-link" href="./pages/discografia.html">Discografia</a>
-                        </li>
-                        <li class="my-style-nav-item">
-                            <a class="my-style-nav-link" href="./pages/comunidad.html">Comunidad</a>
-                        </li>
-                        <li class="my-style-nav-item">
-                            <a class="my-style-nav-link" href="./pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-
-
-
-            </div>
+        <nav>
+            <img class="logo-banda" src="./imgs/logo-banda.png" alt="logo la toma cumbia">
+            <input type="checkbox" id="burger-menu"/>
+            <label for="burger-menu"> <img src="./imgs/icon-burger.png" alt="menu hamburguesa"></label>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./pages/galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="./pages/discografia.html">Discografia</a>
+                </li>
+                <li>
+                    <a href="./pages/comunidad.html">Comunidad</a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
         </nav>
 
         <main>
             <section>
-                <h3 class="neon-ligth-effect text-align-center">BIENVENIDOS</h3>
+                <h2 class="neon-ligth-effect text-align-center">BIENVENIDOS</h2>
             </section>
             <section class="flex-center">
 
@@ -68,18 +54,26 @@
                     TUTORES"
                 </p>
 
-                <div>
-                    <h2 class="title-videos text-align-center">Algunos de nuestros videos aqui</h2>
+                <div class ="section-videos">
+                    <h3 class="title-videos text-align-center">Algunos de nuestros videos aqui</h3>
                     <div class="container-videos">
-                        <iframe width="460" height="215" src="https://www.youtube.com/embed/hiL6u5tAUXc"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hiL6u5tAUXc"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen class="video"></iframe>
 
-                        <iframe width="460" height="215" src="https://www.youtube.com/embed/gnbOk5cGD8U"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gnbOk5cGD8U"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen class="video"></iframe>
+                    </div>
+
+                    <h3 class="title-videos text-align-center">Les dejamos algo de lo que tambien nos gusta</h3>
+
+                    <div class="container-videos">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dcow-Jp3Ak4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xMpO7P25B30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
                     </div>
                 </div>
             </section>
