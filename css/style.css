@@ -17,6 +17,7 @@ body {
 
 .container-grid {
     display: grid;
+    position: relative;
     grid-template-rows: 170px 1fr 1fr 130px;
     grid-template-columns: 10% auto 25%;
     grid-template-areas:
@@ -186,6 +187,9 @@ footer {
     border-radius: 15px;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
