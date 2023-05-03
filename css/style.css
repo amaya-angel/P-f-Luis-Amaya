@@ -10,22 +10,19 @@
 }
 
 body {
-    background-image: url(./../imgs/imagen-de-muestra-7.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image:url(./../imgs/imagen-de-muestra-5.jpg);
 }
 
 .container-grid {
     display: grid;
-    position: relative;
-    grid-template-rows: 170px 1fr 1fr 130px;
-    grid-template-columns: 10% auto 25%;
-    grid-template-areas:
-        "nav header header"
-        "nav main main"
-        "nav main main"
-        "footer footer footer"
-    ;
+  grid-template-rows: 150px 1fr 1fr 130px;
+  grid-template-columns: 10% auto 25%;
+  grid-template-areas:
+    "nav header header"
+    "nav main main"
+    "nav main main"
+    "footer footer footer";
+    
 }
 
 header {
@@ -52,19 +49,21 @@ h1 {
 }
 
 nav {
-    margin: 15px;
+    grid-area: nav;
+    width: 100%;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
 }
 
 nav ul li {    
+
     margin-top: 30px;
 }
 
 nav a {
+    font-family: fantasy;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -126,7 +125,7 @@ main {
     }
 }
 
-.parrafo-style {
+.parrafo-section {
     background-color: black;
     opacity: 0.8;
     border-radius: 15px;
@@ -148,6 +147,7 @@ main {
 }
 
 .title-carrusel {
+    text-align: center;
     color: aliceblue;
     text-decoration: double;
     text-shadow: 2px 2px 5px rgb(251, 255, 0);
@@ -183,18 +183,19 @@ main {
 footer {
     grid-area: footer;
     display: flex;
-    border: solid 2px black;
+    border: solid 3px black;
+    background-color: white;
+    opacity: 0.7;
     border-radius: 15px;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
     margin: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: fantasy;
 }
 
 footer ul {
@@ -211,13 +212,8 @@ footer ul li {
 
 @media screen and (max-width: 991px) {
 
-    body {
-        background-position: center center;
-        background-attachment: fixed;
-      }
-
     .container-grid {
-        display: grid;
+        height: 100vh;
         grid-template-rows: auto;
         grid-template-columns: 100%;
         grid-template-areas:
@@ -233,7 +229,7 @@ footer ul li {
     }
 
     .logo-banda {
-        text-align: center;
+        margin: auto;
     }
 
     nav {
