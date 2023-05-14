@@ -149,8 +149,8 @@ label {
   color: white;
 }
 
-.text-align-center {
-  text-align: center;
+:root {
+  --color-primary: #ffffff;
 }
 
 @font-face {
@@ -159,7 +159,7 @@ label {
 }
 h2 {
   text-align: center;
-  color: aliceblue;
+  color: var(--color-primary);
   text-decoration: double;
   text-shadow: 2px 2px 5px rgb(251, 255, 0);
 }
