@@ -18,10 +18,10 @@
         </header>
 
         <nav>
-            <img class="logo-banda" src="./../imgs/logo-banda.png" alt="logo la toma cumbia">
+            <img class="logo-banda mq-d-none" src="./../imgs/logo-banda.png" alt="logo la toma cumbia">
             <input type="checkbox" id="burger-menu"/>
             <label for="burger-menu"> <img src="./../imgs/icon-burger.png" alt="menu hamburguesa"></label>
-            <ul>
+            <ul class="mq-d-none">
                 <li>
                     <a href="./../index.html">Inicio</a>
                 </li>
@@ -41,22 +41,23 @@
         </nav>
 
         <main>
-            <section>
+            <h2>Aca podes contratar a la banda para tu evento</h2>
+            <section class="container-form ">
                 <form action="">
-                <div>
+                <div class="containetr-element-form">
                     <label for="">Ingresa tu nombre:</label>
-                    <input type="text">
+                    <input class="bdr-2-b" type="text">
                 </div>
-                <div>
+                <div class="containetr-element-form">
                     <label for="">Ingresa tu e-mail:</label>
-                    <input type="email">
+                    <input class="bdr-2-b" type="email">
                 </div>
-                <div>
+                <div class="container-element-form">
                     <label for="">Deja tu mensaje:</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea class="bdr-2-b" name="" id="" cols="30" rows="10"></textarea>
                 </div>
     
-                <input type="submit" value="Enviar mensaje">
+                <input class="enviar-form" type="submit" value="Enviar mensaje">
             </form>
             </section>
         </main>

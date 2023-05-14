@@ -1,0 +1,36 @@
+.main-discografia-grid {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-template-columns:50% 50%;
+    grid-template-areas: 
+    "title title"
+    "section-izq section-der";
+}
+
+.title-discografia {
+    grid-area: title;
+}
+
+.section-discografia-izq {
+    grid-area: section-izq;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-discografia-der {
+    grid-area: section-der;
+    display: flex;
+    flex-direction: column;    
+}
+
+.container-spotify {
+    margin: 15px 0 40px 0;
+}
+
+@media screen and (max-width: 991px) {
+    .main-discografia-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+}

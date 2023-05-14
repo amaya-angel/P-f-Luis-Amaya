@@ -18,10 +18,10 @@
         </header>
 
         <nav>
-            <img class="logo-banda" src="./../imgs/logo-banda.png" alt="logo la toma cumbia">
+            <img class="logo-banda mq-d-none" src="./../imgs/logo-banda.png" alt="logo la toma cumbia">
             <input type="checkbox" id="burger-menu"/>
             <label for="burger-menu"> <img src="./../imgs/icon-burger.png" alt="menu hamburguesa"></label>
-            <ul>
+            <ul class="mq-d-none">
                 <li>
                     <a href="./../index.html">Inicio</a>
                 </li>
@@ -41,10 +41,34 @@
         </nav>
 
         <main>
-
             <section>
-
-
+                <h2>Bienvenidos y bienvenidas aca pueden compartirnos sus opiniones</h2>
+                <div class="container-comentarios">
+                    <div class="section-header">Comentarios</div>
+                    <div class="comentarios">
+                      <div class="name">Juan Pérez</div>
+                      <div class="comentario-ej">
+                        hola!!! Muchos exitos para la banda!
+                      </div>
+                    </div>
+                    <div class="comentarios">
+                      <div class="name">María García</div>
+                      <div class="comentario-ej">
+                        Que siga la musica!!! 
+                      </div>
+                    </div>
+                    <form>
+                      <div>
+                        <label for="name">Nombre:</label>
+                        <input id="name" type="text" class="campo-name">
+                      </div>
+                      <div>
+                        <label for="comment">Comentario:</label>
+                        <textarea id="comment" class="campo-comentario"></textarea>
+                      </div>
+                      <button type="submit" class="button-enviar">Enviar comentario</button>
+                    </form>
+                  </div>
             </section>
         </main>
 
