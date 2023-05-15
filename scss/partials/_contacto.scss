@@ -1,25 +1,25 @@
 .container-form {
     display: flex;
-    justify-content: center;
-    background-color: rgb(73, 73, 73);
+    background-color: #494949;
     opacity: 0.8;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 label {
-    color: aliceblue;
-    text-shadow: 2px 2px 10px rgb(255, 0, 140);
-}
-
-.container-element-form {
-    margin: 20px;
+    color: #f0f8ff;
+    text-shadow: 2px 2px 10px #ff008c;
+    margin: 10px;
 }
 
 .bdr-2-b {
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid #000000;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .enviar-form {
-    color: white;
+    color: #ffffff;
     @extend .button-enviar;
+    margin: 10px;
 }
