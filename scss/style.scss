@@ -12,9 +12,9 @@
 
 @mixin h2-style {  
     text-align: center;
-    color: var(--color-primary);
+    color: $color-primary;
     text-decoration: double;
-    text-shadow: 2px 2px 5px rgb(251, 255, 0);
+    text-shadow: 2px 2px 5px #b60064;
 }
 
 h2 {
