@@ -1,3 +1,5 @@
+@import "partials/nav.scss";
+@import "partials/footer";
 @import "partials/galeria.scss";
 @import "partials/comunidad.scss";
 @import "partials/discografia.scss";
@@ -19,7 +21,7 @@
 
 h2 {
     @include h2-style;
-  }
+}
 
 * {
     margin: 0;
@@ -62,41 +64,6 @@ header {
         text-align: center;
     }
 
-}
-
-nav {
-    grid-area: nav;
-    width: 100%;
-
-    .logo-banda {
-        width: 100px;
-        height: 100px;
-        margin: 5px;
-    }
-
-    ul {
-        list-style: none;
-
-        li {
-
-            margin-top: 30px;
-        }
-    }
-
-    a {
-        font-family: fantasy;
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-    }
-
-    label {
-        display: none;
-    }
-
-    #burger-menu {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 991px) {
@@ -155,10 +122,14 @@ main {
             1px 1px 20px rgb(255, 0, 200),
             1px 1px 40px rgb(0, 238, 255);
     }
+    .container-videos-section {
+        width: 100%;
+    }
 
     .container-videos-inicio {
         display: flex;
         justify-content: space-between;
+        width: 90%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -167,6 +138,7 @@ main {
         font-size: medium;
         text-shadow: 2px 2px 10px black;
         background-color: aliceblue;
+        width: 80%;
     }
 
     .video-border {
@@ -175,38 +147,17 @@ main {
         margin: 10px;
     }
 }
-
-footer {
-    grid-area: footer;
-    display: flex;
-    border: solid 3px black;
-    background-color: white;
-    opacity: 0.7;
-    border-radius: 15px;
-    justify-content: space-between;
-    align-items: center;
-
-    p {
-        margin: 20px;
-        color: rgb(0, 0, 0);
-        font-size: 20px;
-        font-family: fantasy;
-    }
-
-    ul {
-        margin: 0;
-
-        li {
-            display: inline-block;
-        }
-    }
-
-    .logo-ancho {
-        width: 40px;
-    }
+.text-align-center {
+    text-align: center;
 }
 
+.whatsapp {
+    width: 100px;
+}
 
+.logo-ancho {
+    width: 40px;
+}
 
 @media screen and (max-width: 680px) {
 

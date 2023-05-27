@@ -1,0 +1,25 @@
+footer {
+    grid-area: footer;
+    display: flex;
+    border: solid 3px black;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        margin: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: fantasy;
+    }
+
+    ul {
+        margin: 0;
+
+        li {
+            display: inline-block;
+        }
+    }
+}

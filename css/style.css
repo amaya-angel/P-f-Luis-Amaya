@@ -1,3 +1,54 @@
+nav {
+  grid-area: nav;
+  width: 100%;
+}
+nav img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  margin-top: 30px;
+}
+nav ul li a {
+  font-family: fantasy;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+nav label {
+  display: none;
+}
+nav #burger-menu {
+  display: none;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  border: solid 3px black;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  margin: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: fantasy;
+}
+footer ul {
+  margin: 0;
+}
+footer ul li {
+  display: inline-block;
+}
+
 .portada-galery {
   border-radius: 40px;
   width: 90%;
@@ -197,34 +248,6 @@ header h1 {
   text-align: center;
 }
 
-nav {
-  grid-area: nav;
-  width: 100%;
-}
-nav .logo-banda {
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-}
-nav ul {
-  list-style: none;
-}
-nav ul li {
-  margin-top: 30px;
-}
-nav a {
-  font-family: fantasy;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-}
-nav label {
-  display: none;
-}
-nav #burger-menu {
-  display: none;
-}
-
 @media screen and (min-width: 991px) {
   nav a:hover {
     text-shadow: 2px 0 10px rgb(255, 0, 128), 2px 0 25px rgb(255, 0, 128), 2px 0 50px rgb(255, 0, 128);
@@ -270,9 +293,13 @@ main .parrafo-section-inicio {
   font-size: 20px;
   text-shadow: 1px 1px 10px rgb(255, 255, 255), 1px 1px 20px rgb(255, 0, 200), 1px 1px 40px rgb(0, 238, 255);
 }
+main .container-videos-section {
+  width: 100%;
+}
 main .container-videos-inicio {
   display: flex;
   justify-content: space-between;
+  width: 90%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -280,6 +307,7 @@ main .title-videos {
   font-size: medium;
   text-shadow: 2px 2px 10px black;
   background-color: aliceblue;
+  width: 80%;
 }
 main .video-border {
   border: solid 3px white;
@@ -287,29 +315,15 @@ main .video-border {
   margin: 10px;
 }
 
-footer {
-  grid-area: footer;
-  display: flex;
-  border: solid 3px black;
-  background-color: white;
-  opacity: 0.7;
-  border-radius: 15px;
-  justify-content: space-between;
-  align-items: center;
+.text-align-center {
+  text-align: center;
 }
-footer p {
-  margin: 20px;
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  font-family: fantasy;
+
+.whatsapp {
+  width: 100px;
 }
-footer ul {
-  margin: 0;
-}
-footer ul li {
-  display: inline-block;
-}
-footer .logo-ancho {
+
+.logo-ancho {
   width: 40px;
 }
 
